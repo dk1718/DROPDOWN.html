@@ -1,0 +1,71 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin :0;
+            padding :0;
+           
+        }
+        .dropdown{
+            display : flex;
+            justify-content : center;
+            margin-top:100px;
+            list-style-type :none;
+        }
+        a{
+            display : block;
+            width : 200px;
+            background-color : black;
+            color : white;
+            padding : 10px 0;
+            font-size : 1.2em;
+            text-decoration : none;
+            text-align : center;
+
+        }
+        a:hover{
+            background-color :skyblue ;
+
+        }
+        .product{
+             list-style-type :none;
+             display:none;
+        }
+        .dropdown li:hover .product{
+            display:block; 
+        }
+        .book{
+            list-style-type :none;
+            transform :translateX(200px) translateY(-40px);
+            position :absolute;
+            display :none;
+        }
+        .product li:hover .book{
+            display:block;
+        }
+    </style> 
+</head>
+<body>
+ <div class="container">
+     <ul class=" dropdown">
+         
+         <li> <a href="#"> MENU</a>
+              <ul class="product">
+                  <li><a href="#"> idly</a></li>
+                  <li><a href="#"> dosa</a></li>
+                  <li><a href="#"> rice</a></li>
+                  <li><a href="#"> juice</a>
+                  <ul class="book">
+                      <li><a href="#"> apple juice</a></li>
+                      <li><a href="#"> orange juice</a></li>
+                      <li><a href="#"> lemon juice </a></li>
+                      <li><a href="#"> rose milk</a></li>
+                  </ul></li>
+              </ul></li>
+    
+     </ul>
+ </div>
+</body>
+</html>
